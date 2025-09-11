@@ -22,7 +22,7 @@ interface HelmetViewProps {
   latest: any;
 }
 
-export default function HelmetView({ latest }: HelmetViewProps) {
+export default function HelmetView({ latest={} }: HelmetViewProps) {
   const [selectedSensor, setSelectedSensor] = useState<SensorKey | null>(null);
   const [view, setView] = useState<"side" | "top">("top");
 
